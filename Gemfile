@@ -45,3 +45,11 @@ group :development do
   gem 'spring'
 end
 
+gem 'figaro'
+gem 'mysql2', '~> 0.3.0'
+gem 'redis'
+gem 'wechat'
+gem 'wx_pay'
+gem 'devise'
+gem 'omniauth-wechat-oauth2'
+gem 'bootstrap-sass', '~> 3.3.6'

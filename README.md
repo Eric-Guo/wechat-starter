@@ -4,13 +4,13 @@ Template for developing wechat in rails.
 
 ### Features
 
-1. Integerate gem [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
+* Integerate gem [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
 
-2. Integerate gem [jasl/wx_pay](https://github.com/jasl/wx_pay)
+* Integerate gem [jasl/wx_pay](https://github.com/jasl/wx_pay)
 
 ### Usage
 
-1. Create your new project and add this repo as template
+* Create your new project and add this repo as template
 
 ```
 mkdir your_app
@@ -22,7 +22,7 @@ git checkout -b master template/master
 bundle install
 ```
 
-2. Create `config/application.yml` and config following information:
+* Create `config/application.yml` and config following information:
 
 ```
 wechat_app_id: "AppID"

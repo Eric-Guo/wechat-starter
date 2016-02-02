@@ -8,6 +8,12 @@ Template for developing wechat in rails.
 
 * Integerate gem [jasl/wx_pay](https://github.com/jasl/wx_pay)
 
+### Requirements
+
+* Mysql
+
+* Configure the server url as `http://your-domain.com/wechat`
+
 ### Usage
 
 * Create your new project and add this repo as template
@@ -20,6 +26,8 @@ git remote add template https://github.com/goofansu/wechat-starter.git
 git fetch template
 git checkout -b master template/master
 bundle install
+rake db:create
+rake db:migrate
 ```
 
 * Create `config/application.yml` and config following information:
@@ -35,3 +43,7 @@ wechat_pay_mch_id: "merchant id"
 wechat_pay_api_key: "32 bits api key configured in pay.weixin.qq.com"
 wechat_pay_notify_url: "url to accept pay result notification"
 ```
+
+* Start server
+
+`rails s`

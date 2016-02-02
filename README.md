@@ -24,7 +24,7 @@ bundle install
 
 * Create `config/application.yml` and config following information:
 
-```
+``` yaml
 wechat_app_id: "AppID"
 wechat_secret: "AppSecret"
 wechat_token:  "Token"

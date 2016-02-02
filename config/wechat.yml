@@ -1,33 +1,17 @@
 default: &default
-  corpid: "corpid"
-  corpsecret: "corpsecret"
-  agentid:  1
-# Or if using public account, only need above two line
-#  appid: "my_appid"
-#  secret: "my_secret"
-  token:    "my_token"
-  access_token: "C:/Users/[username]/wechat_access_token"
-  encrypt_mode: false # if true must fill encoding_aes_key
-  encoding_aes_key:  "my_encoding_aes_key"
-  jsapi_ticket: "C:/Users/[user_name]/wechat_jsapi_ticket"
+  appid:  <%= Figaro.env.wechat_app_id %>
+  secret: <%= Figaro.env.wechat_secret %>
+  token:  <%= Figaro.env.wechat_token %>
 
 production:
-  corpid:     <%= ENV['WECHAT_CORPID'] %>
-  corpsecret: <%= ENV['WECHAT_CORPSECRET'] %>
-  agentid:    <%= ENV['WECHAT_AGENTID'] %>
-# Or if using public account, only need above two line
-#  appid:      
-#  secret:     
-  token:      <%= ENV['WECHAT_TOKEN'] %>
-  timeout:    30,
-  skip_verify_ssl: true
-  access_token:  <%= ENV['WECHAT_ACCESS_TOKEN'] %>
-  encrypt_mode: false # if true must fill encoding_aes_key
-  encoding_aes_key:  <%= ENV['WECHAT_ENCODING_AES_KEY'] %>
-  jsapi_ticket: 
+  <<: *default
+  encoding_aes_key: <%= Figaro.env.wechat_encoding_aes_key %>
+  encrypt_mode: true
 
 development:
   <<: *default
+  encoding_aes_key: <%= Figaro.env.wechat_encoding_aes_key %>
+  encrypt_mode: true
 
 test:
   <<: *default

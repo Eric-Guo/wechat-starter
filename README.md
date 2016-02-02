@@ -2,6 +2,12 @@
 
 Template for developing wechat in rails.
 
+### Screenshots
+
+<img src="http://i.imgur.com/oFs1AzQ.png" width="240">
+<img src="http://i.imgur.com/urwmWZv.png" width="240">
+<img src="http://i.imgur.com/UPw6FRc.png" width="240">
+
 ### Features
 
 * Integerate gem [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
@@ -12,7 +18,9 @@ Template for developing wechat in rails.
 
 * Mysql
 
-* Configure the server url as `http://your-domain.com/wechat`
+* Configure "服务器地址" as `http://your-domain.com/wechat`
+
+* Configure "测试授权目录" as `http://your-domain.com/`
 
 ### Usage
 

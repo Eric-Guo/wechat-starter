@@ -1,22 +1,26 @@
 <div class="alert alert-success">
   Hello, <%= current_user.nickname %>
-  <a href="#" onclick="javascript:wxpay();" class="alert-link pull-right">
-    Try wechat pay!
-  </a>
+  <% if Figaro.env.wechat_pay_mch_id %>
+    <a href="#" onclick="javascript:wxpay();" class="alert-link pull-right">
+      Try wechat pay!
+    </a>
+  <% end %>
 </div>
 <img src="<%= current_user.avatar %>" class="img-circle img-responsive">
-<script>
- function wxpay() {
-   $.post('/wx_pay', function(data) {
-     WeixinJSBridge.invoke('getBrandWCPayRequest', data, function(res){
-       if(res.err_msg == "get_brand_wcpay_request:ok") {
-         alert("支付成功");
-       } else if(res.err_msg == "get_brand_wcpay_request:cancel") {
-         alert("支付取消");
-       } else {
-         alert("支付失败");
-       }
+<% if Figaro.env.wechat_pay_mch_id %>
+  <script>
+   function wxpay() {
+     $.post('/wx_pay', function(data) {
+       WeixinJSBridge.invoke('getBrandWCPayRequest', data, function(res){
+         if(res.err_msg == "get_brand_wcpay_request:ok") {
+           alert("支付成功");
+         } else if(res.err_msg == "get_brand_wcpay_request:cancel") {
+           alert("支付取消");
+         } else {
+           alert("支付失败");
+         }
+       });
      });
-   });
- }
-</script>
+   }
+  </script>
+<% end %>

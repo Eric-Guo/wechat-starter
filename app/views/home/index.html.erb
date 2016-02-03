@@ -17,6 +17,7 @@
          } else if(res.err_msg == "get_brand_wcpay_request:cancel") {
            alert("支付取消");
          } else {
+           alert(JSON.stringify(data));
            alert("支付失败");
          }
        });

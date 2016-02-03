@@ -16,17 +16,19 @@ class HomeController < ApplicationController
       openid: current_user.uid
     }
     prepay_result = WxPay::Service.invoke_unifiedorder(params)
-    puts prepay_result.inspect
-
-    pay_params = {
-      appId: Figaro.env.wechat_app_id,
-      timeStamp: Time.now.to_i.to_s,
-      nonceStr: SecureRandom.uuid.tr('-', ''),
-      package: "prepay_id=#{prepay_result['prepay_id']}",
-      signType: 'MD5'
-    }
-    sign = WxPay::Sign.generate(pay_params)
-    render json: pay_params.merge({paySign: sign})
+    if prepay_result['return_code'] == 'SUCCESS'
+      pay_params = {
+        appId: Figaro.env.wechat_app_id,
+        timeStamp: Time.now.to_i.to_s,
+        nonceStr: SecureRandom.uuid.tr('-', ''),
+        package: "prepay_id=#{prepay_result['prepay_id']}",
+        signType: 'MD5'
+      }
+      sign = WxPay::Sign.generate(pay_params)
+      render json: pay_params.merge({paySign: sign})
+    else
+      render json: prepay_result
+    end
   end
 
   def wx_notify

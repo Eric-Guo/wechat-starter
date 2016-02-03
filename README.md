@@ -22,7 +22,7 @@ Template for developing wechat in rails.
 
 ### Requirements
 
-* Postgresql
+* PostgreSQL
 
 * Configure "服务器地址" as `http://your-domain.com/wechat`
 

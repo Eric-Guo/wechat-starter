@@ -14,9 +14,11 @@ Template for developing wechat in rails.
 
 ### Features
 
-* Integerate gem [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
+* Process messages with [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
 
-* Integerate gem [jasl/wx_pay](https://github.com/jasl/wx_pay)
+* Pay with [jasl/wx_pay](https://github.com/jasl/wx_pay)
+
+* OAuth2 with [skinnyworm/omniauth-wechat-oauth2](https://github.com/skinnyworm/omniauth-wechat-oauth2)
 
 ### Requirements
 

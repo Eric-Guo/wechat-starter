@@ -46,7 +46,7 @@ group :development do
 end
 
 gem 'figaro'
-gem 'mysql2', '~> 0.3.0'
+gem 'pg'
 gem 'redis'
 gem 'wechat'
 gem 'wx_pay'

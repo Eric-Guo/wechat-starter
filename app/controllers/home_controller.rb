@@ -16,6 +16,8 @@ class HomeController < ApplicationController
       openid: current_user.uid
     }
     prepay_result = WxPay::Service.invoke_unifiedorder(params)
+    puts prepay_result.inspect
+
     pay_params = {
       appId: Figaro.env.wechat_app_id,
       timeStamp: Time.now.to_i.to_s,

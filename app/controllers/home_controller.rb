@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       body: 'Test Wechat Pay',
       out_trade_no: "trade-#{Time.now.to_i}",
       total_fee: 1,
-      spbill_create_ip: remote_ip,
+      spbill_create_ip: request.remote_ip,
       notify_url: Figaro.env.wechat_pay_notify_url,
       trade_type: 'JSAPI',
       openid: current_user.uid
@@ -43,10 +43,5 @@ class HomeController < ApplicationController
       render :xml => {return_code: "FAIL", return_msg: "Signature Error"}
                     .to_xml(root: 'xml', dasherize: false)
     end
-  end
-
-  private
-  def remote_ip
-    request.env["HTTP_X_FORWARDED_FOR"] || request.remote_ip
   end
 end

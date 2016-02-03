@@ -15,9 +15,7 @@ class HomeController < ApplicationController
       trade_type: 'JSAPI',
       openid: current_user.uid
     }
-    puts params
     prepay_result = WxPay::Service.invoke_unifiedorder(params)
-    puts prepay_result
     if prepay_result['return_code'] == 'SUCCESS'
       pay_params = {
         appId: Figaro.env.wechat_app_id,
@@ -29,6 +27,7 @@ class HomeController < ApplicationController
       sign = WxPay::Sign.generate(pay_params)
       render json: pay_params.merge({paySign: sign})
     else
+      puts prepay_result
       render json: prepay_result
     end
   end

@@ -45,11 +45,22 @@ group :development do
   gem 'spring'
 end
 
+# set secret variables
 gem 'figaro'
+
+# database
 gem 'pg'
+
+# wechat related
 gem 'wechat'
 gem 'wx_pay'
-gem 'devise'
 gem 'omniauth-wechat-oauth2'
+
+# account system
+gem 'devise'
+
+# style
 gem 'bootstrap-sass', '~> 3.3.6'
+
+# server
 gem 'puma'

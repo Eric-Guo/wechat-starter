@@ -47,7 +47,6 @@ end
 
 gem 'figaro'
 gem 'pg'
-gem 'redis'
 gem 'wechat'
 gem 'wx_pay'
 gem 'devise'

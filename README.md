@@ -60,4 +60,4 @@ Template for developing wechat in rails.
 
 * Start server
 
-    `rails s`
+    `puma -C config/puma.rb`

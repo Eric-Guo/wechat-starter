@@ -4,7 +4,7 @@ Template for developing wechat in rails.
 
 ### Try
 
-<img src="http://i.imgur.com/L8FBRGE.png" width="300">
+<img src="http://i.imgur.com/oN8jp58.png" width="300">
 
 ### Screenshots
 
@@ -61,3 +61,7 @@ Template for developing wechat in rails.
 * Start server
 
     `puma -C config/puma.rb`
+
+### References
+
+* [omniauth with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)

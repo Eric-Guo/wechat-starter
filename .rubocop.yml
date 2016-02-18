@@ -1,7 +1,10 @@
+AllCops:
+  Exclude:
+    - bin/*
+    - db/**/*
+
 Rails:
   Enabled: true
-  Exclude:
-    - db/schema.rb
 
 ClassAndModuleChildren:
   Enabled: false

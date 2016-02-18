@@ -25,7 +25,7 @@ class HomeController < ApplicationController
         signType: 'MD5'
       }
       sign = WxPay::Sign.generate(pay_params)
-      render json: pay_params.merge({paySign: sign})
+      render json: pay_params.merge(paySign: sign)
     else
       logger.error "Error: #{prepay_result['return_msg']}"
       render json: prepay_result
@@ -33,14 +33,12 @@ class HomeController < ApplicationController
   end
 
   def wx_notify
-    result = Hash.from_xml(request.body.read)["xml"]
+    result = Hash.from_xml(request.body.read)['xml']
     logger.info result.inspect
     if WxPay::Sign.verify?(result)
-      render :xml => {return_code: "SUCCESS", return_msg: "OK"}
-                    .to_xml(root: 'xml', dasherize: false)
+      render xml: { return_code: 'SUCCESS', return_msg: 'OK' }.to_xml(root: 'xml', dasherize: false)
     else
-      render :xml => {return_code: "FAIL", return_msg: "Signature Error"}
-                    .to_xml(root: 'xml', dasherize: false)
+      render xml: { return_code: 'FAIL', return_msg: 'Signature Error' }.to_xml(root: 'xml', dasherize: false)
     end
   end
 end

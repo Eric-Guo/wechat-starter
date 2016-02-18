@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [".bundle",".idea","tmp",".capistrano","log","tmp","public/assets"],
+			"file_exclude_patterns": ["*.sublime-workspace",".byebug_history"]
+		}
+	],
+    "settings":
+    {
+      "translate_tabs_to_spaces": true,
+      "trim_trailing_white_space_on_save": true,
+      "tab_size": 2
+    }
+}

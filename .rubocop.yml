@@ -1,0 +1,31 @@
+Rails:
+  Enabled: true
+  Exclude:
+    - db/schema.rb
+
+ClassAndModuleChildren:
+  Enabled: false
+
+ClassLength:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 150
+
+Metrics/AbcSize:
+  Max: 50
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/IndentationWidth:
+  Width: 2
+
+Style/UnneededPercentQ:
+  Enabled: false

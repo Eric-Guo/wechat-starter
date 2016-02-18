@@ -18,3 +18,5 @@
 
 # Ignore application configuration
 /config/application.yml
+
+*.sublime-workspace

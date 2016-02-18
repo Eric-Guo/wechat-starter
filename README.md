@@ -1,5 +1,7 @@
 # wechat-starter
 
+[![Build Status][travis-badge]][travis]
+
 Template for developing wechat in rails.
 
 ### Try
@@ -65,3 +67,7 @@ Template for developing wechat in rails.
 ### References
 
 * [omniauth with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
+
+
+[travis-badge]: https://travis-ci.org/goofansu/wechat-starter.svg
+[travis]: https://travis-ci.org/goofansu/wechat-starter

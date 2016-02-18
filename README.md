@@ -68,6 +68,10 @@ Template for developing wechat in rails.
 
 * [omniauth with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
 
+### Contributors
+
+* [Eric-Guo](https://github.com/Eric-Guo)
+
 
 [travis-badge]: https://travis-ci.org/goofansu/wechat-starter.svg
 [travis]: https://travis-ci.org/goofansu/wechat-starter

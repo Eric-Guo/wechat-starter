@@ -1,7 +1,7 @@
 <div class="weui_msg">
   <div class="weui_text_area">
     <h1 class="weui_msg_title">Hello, <%= current_user.nickname %></h1>
-    <img src="<%= current_user.avatar %>">
+    <img src="<%= current_user.avatar %>" width="128" height="128">
   </div>
   <% if Figaro.env.wechat_pay_mch_id %>
     <div class="weui_opr_area">

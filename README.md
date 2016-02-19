@@ -10,7 +10,7 @@ Template for developing wechat in rails.
 
 ### Screenshots
 
-<img src="http://i.imgur.com/oFs1AzQ.png" width="240">
+<img src="http://i.imgur.com/u0opEfP.png" width="240">
 <img src="http://i.imgur.com/urwmWZv.png" width="240">
 <img src="http://i.imgur.com/UPw6FRc.png" width="240">
 

@@ -20,3 +20,4 @@
 /config/application.yml
 
 *.sublime-workspace
+/shared

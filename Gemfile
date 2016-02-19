@@ -59,7 +59,7 @@ gem 'omniauth-wechat-oauth2'
 gem 'devise'
 
 # style
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'weui-rails'
 
 # server
 gem 'puma'

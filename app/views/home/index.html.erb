@@ -1,12 +1,19 @@
-<div class="alert alert-success">
-  Hello, <%= current_user.nickname %>
+<div class="weui_msg">
+  <div class="weui_text_area">
+    <h1 class="weui_msg_title">Hello, <%= current_user.nickname %></h1>
+    <img src="<%= current_user.avatar %>">
+  </div>
   <% if Figaro.env.wechat_pay_mch_id %>
-    <a href="#" onclick="javascript:wxpay();" class="alert-link pull-right">
-      Try wechat pay!
-    </a>
+    <div class="weui_opr_area">
+      <p class="weui_btn_area">
+        <a href="#" onclick="javascript:wxpay();" class="weui_btn weui_btn_primary">
+          Try wechat pay!
+        </a>
+      </p>
+    </div>
   <% end %>
 </div>
-<img src="<%= current_user.avatar %>" class="img-circle img-responsive">
+
 <% if Figaro.env.wechat_pay_mch_id %>
   <script>
    function wxpay() {

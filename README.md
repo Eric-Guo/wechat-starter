@@ -18,6 +18,8 @@ Template for developing wechat in rails.
 
 * Process messages with [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
 
+* UI library using [weui](https://github.com/weui/weui) with [weui-rails](https://github.com/Eric-Guo/weui-rails)
+
 * Pay with [jasl/wx_pay](https://github.com/jasl/wx_pay)
 
 * OAuth2 with [skinnyworm/omniauth-wechat-oauth2](https://github.com/skinnyworm/omniauth-wechat-oauth2)

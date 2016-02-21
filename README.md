@@ -55,6 +55,7 @@ Template for developing wechat in rails.
     wechat_secret: "AppSecret"
     wechat_token:  "Token"
     wechat_encoding_aes_key: "EncodingAESKey"
+    wechat_trusted_domain_fullname: "http://your_dev.proxy.qqbrowser.cc"
 
     # following is optional if you don't need wechat pay
     wechat_pay_mch_id: "merchant id"

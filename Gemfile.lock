@@ -207,12 +207,12 @@ GEM
       activemodel (>= 4.2)
       debug_inspector
       railties (>= 4.2)
-    wechat (0.7.4)
+    wechat (0.7.5)
       activesupport (>= 3.2, < 5.1.x)
       http (~> 1.0, >= 1.0.1)
       nokogiri (>= 1.6.0)
       thor
-    weui-rails (0.3.0)
+    weui-rails (0.3.1)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     wx_pay (0.5.0)

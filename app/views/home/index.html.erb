@@ -1,3 +1,10 @@
+<%= wechat_config_js debug: false, api: %w(hideMenuItems closeWindow) -%>
+<script type="application/javascript">
+  wx.ready(function() {
+      wx.hideOptionMenu();
+  });
+</script>
+
 <div class="weui_msg">
   <div class="weui_text_area">
     <h1 class="weui_msg_title">Hello, <%= current_user.nickname %></h1>
@@ -6,9 +13,8 @@
   <% if Figaro.env.wechat_pay_mch_id %>
     <div class="weui_opr_area">
       <p class="weui_btn_area">
-        <a href="#" onclick="javascript:wxpay();" class="weui_btn weui_btn_primary">
-          Try wechat pay!
-        </a>
+        <a href="javascript:wxpay();" class="weui_btn weui_btn_primary">Try wechat pay!</a>
+        <a href="javascript:wx.closeWindow();" class="weui_btn weui_btn_plain_default">Close</a>
       </p>
     </div>
   <% end %>

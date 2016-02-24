@@ -4,12 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
-  # add validations
-  before_validation :set_password
-  validates :birthday, presence: true
+  after_initialize :set_password
 
-  # if no validation, uncomment following line
-  # before_save :set_password
+  validates :birthday, presence: true
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -37,6 +34,6 @@ class User < ActiveRecord::Base
 
   private
   def set_password
-    self.password = Devise.friendly_token[0, 20]
+    self.password ||= Devise.friendly_token[0, 20]
   end
 end

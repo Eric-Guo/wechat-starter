@@ -4,8 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
-  after_initialize :set_password
-
+  before_validation :set_password
   validates :birthday, presence: true
 
   def self.from_omniauth(auth)

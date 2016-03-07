@@ -16,3 +16,5 @@ development:
 
 test:
   <<: *default
+  access_token: "/tmp/wechat_starter_test_access_token"
+  jsapi_ticket: "/tmp/wechat_starter_test_jsapi_ticket"

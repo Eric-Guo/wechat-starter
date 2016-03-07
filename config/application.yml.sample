@@ -1,0 +1,11 @@
+# We just provide a minimal testing public account in order to let testing pass.
+wechat_app_id: "wx90b3e204fcb50e72"
+wechat_secret: "7153c8b6f0c2f5e5b6672033422ae3fb"
+wechat_token:  "Token"
+wechat_encoding_aes_key: "EncodingAESKey"
+wechat_trusted_domain_fullname: "http://your_dev.proxy.qqbrowser.cc"
+
+# following is optional if you don't need wechat pay
+wechat_pay_mch_id: "merchant id"
+wechat_pay_api_key: "32 bits api key configured in pay.weixin.qq.com"
+wechat_pay_notify_url: "url to accept pay result notification"

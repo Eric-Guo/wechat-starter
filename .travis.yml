@@ -21,6 +21,7 @@ cache: bundler
 
 before_script:
   - psql -c 'create database wechat_starter_test;' -U postgres
+  - cp config/application.yml.sample config/application.yml
   - bundle exec rake db:migrate --trace
 
 script: bundle exec rake

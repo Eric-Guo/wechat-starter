@@ -1,6 +1,11 @@
 namespace 'wechat' do
+  desc 'show access token'
+  task 'access_token' => :environment do
+    puts Wechat.api.access_token.token
+  end
+
   desc 'show wechat menu'
-  task 'menu' => :environment do
+  task 'menu' do
     puts Wechat.api.menu
   end
 

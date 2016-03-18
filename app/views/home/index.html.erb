@@ -27,12 +27,12 @@
      $.post('/wx_pay', function(data) {
        WeixinJSBridge.invoke('getBrandWCPayRequest', data, function(res){
          if(res.err_msg == "get_brand_wcpay_request:ok") {
-           alert("支付成功");
+           // 支付成功
          } else if(res.err_msg == "get_brand_wcpay_request:cancel") {
-           alert("支付取消");
+           // 用户取消支付
          } else {
+           // 支付调用失败
            alert(JSON.stringify(data));
-           alert("支付失败");
          }
        });
      });

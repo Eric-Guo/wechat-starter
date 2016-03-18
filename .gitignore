@@ -21,3 +21,4 @@
 
 *.sublime-workspace
 /shared
+config/menu.yaml

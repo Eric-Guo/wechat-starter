@@ -1,0 +1,32 @@
+# example from Eric-Guo/wechat
+button:
+  -
+    name: "Want"
+    sub_button:
+      -
+        type: "scancode_waitmsg"
+        name: "绑定用餐二维码"
+        key: "BINDING_QR_CODE"
+      -
+        type: "click"
+        name: "预订午餐"
+        key:  "BOOK_LUNCH"
+      -
+        type: "click"
+        name: "预订晚餐"
+        key:  "BOOK_DINNER"
+  -
+    name: "Query"
+    sub_button:
+      -
+        type: "click"
+        name: "进出记录"
+        key:  "BADGE_IN_OUT"
+      -
+        type: "click"
+        name: "年假余额"
+        key:  "ANNUAL_LEAVE"
+  -
+    type: "view"
+    name: "About"
+    url:  "http://blog.cloud-mes.com/"

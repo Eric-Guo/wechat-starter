@@ -114,6 +114,13 @@ class WechatsController < ActionController::Base
     request.reply.text "replace_party job #{batch_job[:JobId]} finished, return code #{batch_job[:ErrCode]}, return message #{batch_job[:ErrMsg]}"
   end
 
+  on :event do |request|
+    logger.info request.inspect
+    if request[:CardId].present?
+      request.reply.text "CardId: #{request[:CardId]}, Event: #{request[:Event]}"
+    end
+  end
+
   # Any not match above will fail to below
   on :fallback, respond: 'fallback message'
 end

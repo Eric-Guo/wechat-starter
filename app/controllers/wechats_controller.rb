@@ -1,4 +1,5 @@
 class WechatsController < ActionController::Base
+  # to allow using wechat message DSL and web page helper
   wechat_responder
 
   # default text responder when no other match

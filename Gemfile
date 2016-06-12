@@ -56,7 +56,7 @@ gem 'wx_pay'
 gem 'omniauth-wechat-oauth2'
 
 # account system
-gem 'devise'
+gem 'devise', '~> 3.5.9'
 
 # style
 gem 'weui-rails'

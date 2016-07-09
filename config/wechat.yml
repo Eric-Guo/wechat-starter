@@ -7,6 +7,7 @@ production:
   <<: *default
   encoding_aes_key: <%= Figaro.env.wechat_encoding_aes_key %>
   encrypt_mode: true
+  trusted_domain_fullname: <%= Figaro.env.wechat_trusted_domain_fullname %>
 
 development:
   <<: *default
@@ -18,3 +19,4 @@ test:
   <<: *default
   access_token: "/tmp/wechat_starter_test_access_token"
   jsapi_ticket: "/tmp/wechat_starter_test_jsapi_ticket"
+  trusted_domain_fullname: <%= Figaro.env.wechat_trusted_domain_fullname %>

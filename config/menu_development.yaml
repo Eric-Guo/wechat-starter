@@ -1,0 +1,5 @@
+button:
+  -
+    type: "view"
+    name: "wechat-starter"
+    url: "http://dev.example.com"

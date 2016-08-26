@@ -67,6 +67,20 @@ Template for developing wechat in rails.
 
     `puma -C config/puma.rb`
 
+### Create customized menu
+
+It depends on `Rails.env` to choose the menu from config folder.
+
+For example, if `Rails.env == production`, then `config/menu_production.yaml` is chosed.
+
+``` bash
+# create menu
+rake wechat:menu_create
+
+# show menu
+rake wechat:menu
+```
+
 ### References
 
 * [omniauth with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)

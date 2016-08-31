@@ -13,7 +13,7 @@
     "wechat_encrypt_mode": "消息是否加密，是填true，否则填false",
     "wechat_pay_mch_id": "商户号，在微信支付中查看，没有就留空",
     "wechat_pay_api_key": "微信支付的API KEY，没有就留空",
-    "wechat_pay_notify_url": "http://your.app.domain/wx_notify",
+    "wechat_pay_notify_url": "http://your.app.domain/wx_notify"
   },
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"

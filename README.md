@@ -6,11 +6,11 @@ Template for developing wechat in rails.
 
 ### Try
 
-<img src="http://i.imgur.com/oN8jp58.png" width="300">
+<img src="http://i.imgur.com/IhT9poO.png" width="300">
 
 ### Screenshots
 
-<img src="http://i.imgur.com/u0opEfP.png" width="240">
+<img src="http://i.imgur.com/WimbzPX.png" width="240">
 <img src="http://i.imgur.com/urwmWZv.png" width="240">
 <img src="http://i.imgur.com/UPw6FRc.png" width="240">
 

@@ -1,6 +1,18 @@
 {
   "name": "wechat-starter demo",
   "repository": "https://github.com/goofansu/wechat-starter",
-  "addons": [{"plan": "heroku-postgresql"}],
-  "buildpacks": [{"url": "heroku/ruby"}]
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "env": {
+    "app_domain": "http://wechat-starter.ggrok.com/",
+    "LANG": "en_US.UTF-8",
+    "RACK_ENV": "production",
+    "RAILS_ENV": "production",
+    "RAILS_SERVE_STATIC_FILES": "enabled",
+    "SECRET_KEY_BASE": "REDACTED",
+    "wechat_app_id": "REDACTED",
+    "wechat_secret": "REDACTED",
+    "wechat_token": "REDACTED"
+  }
 }

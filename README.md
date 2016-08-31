@@ -4,16 +4,6 @@
 
 Template for developing wechat in rails.
 
-### Try
-
-<img src="http://i.imgur.com/IhT9poO.png" width="300">
-
-### Screenshots
-
-<img src="http://i.imgur.com/WimbzPX.png" width="240">
-<img src="http://i.imgur.com/urwmWZv.png" width="240">
-<img src="http://i.imgur.com/UPw6FRc.png" width="240">
-
 ### Features
 
 * Process messages with [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
@@ -24,50 +14,68 @@ Template for developing wechat in rails.
 
 * OAuth2 with [skinnyworm/omniauth-wechat-oauth2](https://github.com/skinnyworm/omniauth-wechat-oauth2)
 
-### Requirements
+### Screenshots
 
-* PostgreSQL
+<img src="http://i.imgur.com/WimbzPX.png" width="240">
+<img src="http://i.imgur.com/urwmWZv.png" width="240">
+<img src="http://i.imgur.com/UPw6FRc.png" width="240">
 
-* Configure "服务器地址" as `http://your-domain.com/wechat`
+### Demo
 
-* Configure "测试授权目录" as `http://your-domain.com/`
+<img src="http://i.imgur.com/IhT9poO.png" width="300">
 
-### Usage
+# Install
 
-* Create your new project and add this repo as template
+### Deploy to Heroku
 
-    ```
-    mkdir your_app
-    cd your_app
-    git init
-    git remote add template https://github.com/goofansu/wechat-starter.git
-    git fetch template
-    git checkout -b master template/master
-    bundle install
-    rake db:create
-    rake db:migrate
-    ```
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-* Create `config/application.yml` and config following information:
+### Deploy to your own server
 
-    ``` yaml
-    wechat_app_id: "AppID"
-    wechat_secret: "AppSecret"
-    wechat_token:  "Token"
-    wechat_encoding_aes_key: "EncodingAESKey"
-    wechat_trusted_domain_fullname: "http://your_dev.proxy.qqbrowser.cc"
+* Requirements
 
-    # following is optional if you don't need wechat pay
-    wechat_pay_mch_id: "merchant id"
-    wechat_pay_api_key: "32 bits api key configured in pay.weixin.qq.com"
-    wechat_pay_notify_url: "url to accept pay result notification"
-    ```
+    * PostgreSQL
 
-* Start server
+    * Configure "服务器地址" as `http://your-domain.com/wechat`
 
-    `puma -C config/puma.rb`
+    * Configure "测试授权目录" as `http://your-domain.com/`
 
-### Create customized menu
+* Install
+
+    * Create your new project and add this repo as template
+    
+        ``` bash
+        mkdir your_app
+        cd your_app
+        git init
+        git remote add template https://github.com/goofansu/wechat-starter.git
+        git fetch template
+        git checkout -b master template/master
+        bundle install
+        rake db:create
+        rake db:migrate
+        ```
+
+    * Create `config/application.yml` and config following information:
+
+        ``` yaml
+        wechat_app_id: "AppID"
+        wechat_secret: "AppSecret"
+        wechat_token:  "Token"
+        wechat_encoding_aes_key: "EncodingAESKey"
+        wechat_trusted_domain_fullname: "http://your_dev.proxy.qqbrowser.cc"
+
+        # following is optional if you don't need wechat pay
+        wechat_pay_mch_id: "merchant id"
+        wechat_pay_api_key: "32 bits api key configured in pay.weixin.qq.com"
+        wechat_pay_notify_url: "url to accept pay result notification"
+        ```
+
+    * Start server
+
+        `puma -C config/puma.rb`
+
+# Create customized menu
 
 It depends on `Rails.env` to choose the menu from config folder.
 
@@ -81,14 +89,13 @@ rake wechat:menu_create
 rake wechat:menu
 ```
 
-### References
+# References
 
 * [omniauth with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
 
-### Contributors
+# Contributors
 
 * [Eric-Guo](https://github.com/Eric-Guo)
-
 
 [travis-badge]: https://travis-ci.org/goofansu/wechat-starter.svg
 [travis]: https://travis-ci.org/goofansu/wechat-starter

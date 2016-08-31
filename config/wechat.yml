@@ -5,14 +5,14 @@ default: &default
 
 production:
   <<: *default
+  encrypt_mode: <%= Figaro.env.wechat_encrypt_mode %>
   encoding_aes_key: <%= Figaro.env.wechat_encoding_aes_key %>
-  encrypt_mode: true
   trusted_domain_fullname: <%= Figaro.env.wechat_trusted_domain_fullname %>
 
 development:
   <<: *default
+  encrypt_mode: <%= Figaro.env.wechat_encrypt_mode %>
   encoding_aes_key: <%= Figaro.env.wechat_encoding_aes_key %>
-  encrypt_mode: true
   trusted_domain_fullname: <%= Figaro.env.wechat_trusted_domain_fullname %>
 
 test:

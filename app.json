@@ -5,15 +5,26 @@
     "heroku-postgresql:hobby-dev"
   ],
   "env": {
-    "app_domain": "http://your.app.domain",
     "wechat_app_id": "公众号AppId",
     "wechat_secret": "公众号AppSecret",
     "wechat_token": "公众号Token",
-    "wechat_encoding_aes_key": "公众号EncodingAESKey，测试号留空",
     "wechat_encrypt_mode": "消息是否加密，是填true，否则填false",
-    "wechat_pay_mch_id": "商户号，在微信支付中查看，没有就留空",
-    "wechat_pay_api_key": "微信支付的API KEY，没有就留空",
-    "wechat_pay_notify_url": "http://your.app.domain/wx_notify"
+    "wechat_encoding_aes_key": {
+      "value": "公众号EncodingAESKey，测试号留空",
+      "required": false
+    },
+    "wechat_pay_mch_id": {
+      "value": "商户号，在微信支付中查看，没有就留空",
+      "required": false
+    },
+    "wechat_pay_api_key": {
+      "value": "微信支付的API KEY，没有就留空",
+      "required": false
+    },
+    "wechat_pay_notify_url": {
+      "value": "http://your.app.domain/wx_notify",
+      "required": false
+    }
   },
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"

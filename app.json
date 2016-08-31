@@ -1,0 +1,6 @@
+{
+  "name": "wechat-starter demo",
+  "repository": "https://github.com/goofansu/wechat-starter",
+  "addons": [{"plan": "heroku-postgresql"}],
+  "buildpacks": [{"url": "heroku/ruby"}]
+}

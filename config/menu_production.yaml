@@ -2,4 +2,4 @@ button:
   -
     type: "view"
     name: "wechat-starter"
-    url: "http://wechat-starter.herokuapp.com"
+    url: "http://wechat-starter.ggrok.com"

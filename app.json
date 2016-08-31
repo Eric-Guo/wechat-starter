@@ -10,19 +10,19 @@
     "wechat_token": "公众号Token",
     "wechat_encrypt_mode": "消息是否加密，是填true，否则填false",
     "wechat_encoding_aes_key": {
-      "value": "公众号EncodingAESKey，测试号留空",
+      "description": "公众号EncodingAESKey，测试号留空",
       "required": false
     },
     "wechat_pay_mch_id": {
-      "value": "商户号，在微信支付中查看，没有就留空",
+      "description": "商户号，在微信支付中查看，没有就留空",
       "required": false
     },
     "wechat_pay_api_key": {
-      "value": "微信支付的API KEY，没有就留空",
+      "description": "微信支付的API KEY，没有就留空",
       "required": false
     },
     "wechat_pay_notify_url": {
-      "value": "http://your.app.domain/wx_notify",
+      "description": "http://your.app.domain/wx_notify",
       "required": false
     }
   },

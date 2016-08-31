@@ -1,22 +1,22 @@
-app_dir = File.expand_path("../..", __FILE__)
+app_dir = File.expand_path('../..', __FILE__)
 shared_dir = "#{app_dir}/shared"
 
 # Ensure dirs exist
-%w(log pids sockets).each { |subdir|
+%w(log pids sockets).each do |subdir|
   require 'fileutils'
   dir = "#{shared_dir}/#{subdir}"
   FileUtils.mkdir_p(dir) unless File.directory?(dir)
-}
+end
 
 # Default to development mode
-rails_env = ENV['RAILS_ENV'] || "development"
+rails_env = ENV['RAILS_ENV'] || 'development'
 environment rails_env
 
 # Use socket for performance boost in production mode
 if rails_env == 'production'
   bind "unix://#{shared_dir}/sockets/puma.sock"
 else
-  bind "tcp://127.0.0.1:3000"
+  bind 'tcp://127.0.0.1:3000'
 end
 
 # Logging

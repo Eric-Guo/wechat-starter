@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.6'
+gem 'rails', '~> 5.0.0'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
@@ -49,6 +49,7 @@ end
 
 # set secret variables
 gem 'figaro'
+gem 'pry', group: :development
 
 # wechat related
 gem 'wechat'
@@ -56,7 +57,7 @@ gem 'wx_pay'
 gem 'omniauth-wechat-oauth2'
 
 # account system
-gem 'devise', '~> 3.5.9'
+gem 'devise', '~> 4.0.0'
 
 # style
 gem 'weui-rails'

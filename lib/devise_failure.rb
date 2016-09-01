@@ -1,5 +1,5 @@
 class DeviseFailure < Devise::FailureApp
   def redirect_url
-    user_omniauth_authorize_path :wechat
+    user_wechat_omniauth_authorize_path
   end
 end

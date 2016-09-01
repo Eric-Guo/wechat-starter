@@ -61,7 +61,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
-    domain_name (0.5.20160615)
+    domain_name (0.5.20160826)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -209,7 +209,7 @@ GEM
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    wechat (0.7.19)
+    wechat (0.7.20)
       activesupport (>= 3.2, < 5.1.x)
       http (>= 1.0.4, < 3)
       nokogiri (>= 1.6.0)

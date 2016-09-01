@@ -49,6 +49,7 @@ end
 
 # set secret variables
 gem 'figaro'
+gem 'pry', group: :development
 
 # wechat related
 gem 'wechat'

@@ -1,5 +1,5 @@
 <script src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
-<%= wechat_config_js debug: false, api: %w(hideMenuItems closeWindow) -%>
+<%= wechat_config_js debug: true, api: %w(hideMenuItems closeWindow chooseWXPay) -%>
 <script type="application/javascript">
  wx.ready(function() {
    wx.hideOptionMenu();
@@ -25,14 +25,17 @@
   <script>
    function wxpay() {
      $.post('/wx_pay', function(data) {
-       WeixinJSBridge.invoke('getBrandWCPayRequest', data, function(res){
-         if(res.err_msg == "get_brand_wcpay_request:ok") {
-           // 支付成功
-         } else if(res.err_msg == "get_brand_wcpay_request:cancel") {
-           // 用户取消支付
-         } else {
-           // 支付调用失败
-           alert(JSON.stringify(data));
+       wx.chooseWXPay({
+         timestamp: data.timeStamp,
+         nonceStr: data.nonceStr,
+         package: data.package,
+         signType: data.signType,
+         paySign: data.paySign,
+         success: function (res) {
+           alert("pay success" + JSON.Stringify(res));
+         },
+         error: function(e) {
+           alert("pay failed" + JSON.Stringify(e));
          }
        });
      });

@@ -18,17 +18,21 @@ class HomeController < ApplicationController
       trade_type: 'JSAPI',
       openid: current_user.uid
     }
+
     prepay_result = WxPay::Service.invoke_unifiedorder(params)
-    if prepay_result['return_code'] == 'SUCCESS'
+    if prepay_result.success?
+      app_id = prepay_result['appid']
+      prepay_id = prepay_result['prepay_id']
+      nonce_str = prepay_result['nonce_str']
       pay_params = {
-        appId: Figaro.env.wechat_app_id,
+        appId: app_id,
         timeStamp: Time.now.to_i.to_s,
-        nonceStr: SecureRandom.uuid.tr('-', ''),
-        package: "prepay_id=#{prepay_result['prepay_id']}",
+        nonceStr: nonce_str,
+        package: "prepay_id=#{prepay_id}",
         signType: 'MD5'
       }
-      sign = WxPay::Sign.generate(pay_params)
-      render json: pay_params.merge(paySign: sign)
+      pay_sign = WxPay::Sign.generate(pay_params)
+      render json: pay_params.merge(paySign: pay_sign)
     else
       logger.error "Error: #{prepay_result['return_msg']}"
       render json: prepay_result

@@ -4,6 +4,14 @@
 
 Template for developing wechat in rails.
 
+### Status
+
+Branch master is stable and production ready.
+
+Branch develop is deployed on heroku and each commit will trigger a deploy. You can scan the QRCode to see the demo:
+
+<img src="http://i.imgur.com/IhT9poO.png" width="300">
+
 ### Features
 
 * Process messages with [Eric-Guo/wechat](https://github.com/Eric-Guo/wechat)
@@ -19,10 +27,6 @@ Template for developing wechat in rails.
 <img src="http://i.imgur.com/WimbzPX.png" width="240">
 <img src="http://i.imgur.com/urwmWZv.png" width="240">
 <img src="http://i.imgur.com/UPw6FRc.png" width="240">
-
-### Demo
-
-<img src="http://i.imgur.com/IhT9poO.png" width="300">
 
 # Install
 

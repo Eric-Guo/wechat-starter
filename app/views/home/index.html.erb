@@ -32,10 +32,10 @@
          signType: data.signType,
          paySign: data.paySign,
          success: function (res) {
-           alert("pay success" + JSON.Stringify(res));
+           alert(JSON.stringify(res));
          },
          error: function(e) {
-           alert("pay failed" + JSON.Stringify(e));
+           alert(JSON.stringify(e));
          }
        });
      });

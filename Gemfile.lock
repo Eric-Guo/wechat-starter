@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/goofansu/wx_pay.git
+  revision: dff1e2b141953c68c7057daa97e6768f3d69be7e
+  specs:
+    wx_pay (0.9.1)
+      activesupport (>= 3.2)
+      rest-client (>= 1.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -217,9 +225,6 @@ GEM
     weui-rails (0.4.3)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    wx_pay (0.9.1)
-      activesupport (>= 3.2)
-      rest-client (>= 1.7)
 
 PLATFORMS
   ruby
@@ -245,7 +250,7 @@ DEPENDENCIES
   web-console (~> 3.1)
   wechat
   weui-rails
-  wx_pay
+  wx_pay!
 
 BUNDLED WITH
    1.12.5

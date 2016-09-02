@@ -16,10 +16,11 @@ class PayController < ApplicationController
     prepay_result = WxPay::Service.invoke_unifiedorder(params)
     if prepay_result.success?
       js_pay_params = {
-        noncestr: prepay_result['nonce_str'],
-        package: "prepay_id=#{prepay_result['prepay_id']}"
+        prepayid: prepay_result['prepay_id'],
+        noncestr: prepay_result['nonce_str']
       }
       pay_params = WxPay::Service.generate_js_pay_req js_pay_params
+      logger.info pay_params
       render json: pay_params
     else
       logger.error prepay_result['return_msg']

@@ -53,7 +53,7 @@ gem 'pry', group: :development
 
 # wechat related
 gem 'wechat'
-gem 'wx_pay'
+gem 'wx_pay', git: "https://github.com/goofansu/wx_pay.git"
 gem 'omniauth-wechat-oauth2'
 
 # account system

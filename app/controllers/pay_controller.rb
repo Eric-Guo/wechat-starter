@@ -15,7 +15,13 @@ class PayController < ApplicationController
 
     prepay_result = WxPay::Service.invoke_unifiedorder(params)
     if prepay_result.success?
-      render json: pay_params(prepay_result)
+      js_pay_params = {
+        prepayid: prepay_result['prepay_id'],
+        noncestr: prepay_result['nonce_str']
+      }
+      pay_params = WxPay::Service.generate_js_pay_req js_pay_params
+      logger.info pay_params
+      render json: pay_params
     else
       logger.error prepay_result['return_msg']
       render json: prepay_result
@@ -30,22 +36,5 @@ class PayController < ApplicationController
     else
       render xml: { return_code: 'FAIL', return_msg: 'Signature Error' }.to_xml(root: 'xml', dasherize: false)
     end
-  end
-
-  private
-
-  def pay_params(prepay_result)
-    app_id = prepay_result['appid']
-    prepay_id = prepay_result['prepay_id']
-    nonce_str = prepay_result['nonce_str']
-    pay_params = {
-      appId: app_id,
-      timeStamp: Time.now.to_i.to_s,
-      nonceStr: nonce_str,
-      package: "prepay_id=#{prepay_id}",
-      signType: 'MD5'
-    }
-    pay_sign = WxPay::Sign.generate(pay_params)
-    pay_params.merge(paySign: pay_sign)
   end
 end

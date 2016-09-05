@@ -217,7 +217,7 @@ GEM
     weui-rails (0.4.3)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    wx_pay (0.9.1)
+    wx_pay (0.10)
       activesupport (>= 3.2)
       rest-client (>= 1.7)
 

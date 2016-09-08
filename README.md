@@ -26,6 +26,10 @@ Template for developing wechat in rails.
 
 # Install
 
+### See wiki first
+
+* [Wiki](https://github.com/goofansu/wechat-starter/wiki)
+
 ### Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)

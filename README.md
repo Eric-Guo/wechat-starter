@@ -32,6 +32,10 @@ Branch develop is deployed on heroku and each commit will trigger a deploy. You 
 
 # Install
 
+### See wiki first
+
+* [Wiki](https://github.com/goofansu/wechat-starter/wiki)
+
 ### Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)

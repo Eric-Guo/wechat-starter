@@ -22,7 +22,7 @@ Template for developing wechat in rails.
 
 ### Demo
 
-<img src="http://i.imgur.com/IhT9poO.png" width="300">
+<img src="http://i.imgur.com/TcnHLED.png" width="300">
 
 # Install
 

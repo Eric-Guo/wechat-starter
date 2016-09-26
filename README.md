@@ -12,7 +12,7 @@ Branch master is stable and production ready.
 
 Branch develop is deployed on heroku and each commit will trigger a deploy. You can scan the QRCode to see the demo:
 
-<img src="http://i.imgur.com/IhT9poO.png" width="300">
+<img src="http://i.imgur.com/TcnHLED.png" width="300">
 
 ### Features
 

@@ -30,6 +30,10 @@ Branch develop is deployed on heroku and each commit will trigger a deploy. You 
 <img src="http://i.imgur.com/urwmWZv.png" width="240">
 <img src="http://i.imgur.com/UPw6FRc.png" width="240">
 
+### Demo
+
+<img src="http://i.imgur.com/TcnHLED.png" width="300">
+
 # Install
 
 ### See wiki first

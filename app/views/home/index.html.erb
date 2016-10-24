@@ -6,17 +6,17 @@
  });
 </script>
 
-<div class="weui_msg">
-  <div class="weui_text_area">
-    <h1 class="weui_msg_title">Hello, <%= current_user.nickname %></h1>
+<div class="weui-msg">
+  <div class="weui-msg__text-area">
+    <h1 class="weui-msg__title">Hello, <%= current_user.nickname %></h1>
     <img src="<%= current_user.avatar %>" width="128" height="128">
   </div>
-  <div class="weui_opr_area">
-    <p class="weui_btn_area">
+  <div class="weui-msg__opr-area">
+    <p class="weui-btn-area">
       <% if Figaro.env.wechat_pay_mch_id %>
-        <a href="javascript:wxpay();" class="weui_btn weui_btn_primary">Try wechat pay!</a>
+        <a href="javascript:wxpay();" class="weui-btn weui-btn_primary">Try wechat pay!</a>
       <% end %>
-      <a href="javascript:wx.closeWindow();" class="weui_btn weui_btn_plain_default">Close</a>
+      <a href="javascript:wx.closeWindow();" class="weui-btn weui-btn_plain-default">Close</a>
     </p>
   </div>
 </div>

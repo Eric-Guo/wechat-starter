@@ -1,26 +1,26 @@
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <%= wechat_config_js debug: false, api: %w(closeWindow) -%>
 
-<div class="weui_msg">
-  <div class="weui_text_area">
-    <h1 class="weui_msg_title">Sign Up</h1>
+<div class="weui-msg">
+  <div class="weui-msg__text-area">
+    <h1 class="weui-msg__title">Sign Up</h1>
   </div>
 </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <div class="weui_cells_title">Following fields is required</div>
-  <div class="weui_cells weui_cells_form">
-    <div class="weui_cell">
-      <div class="weui_cell_hd">
-        <%= f.label :birthday, class: 'weui_label' %>
+  <div class="weui-cells_title">Following fields is required</div>
+  <div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+      <div class="weui-cell__hd">
+        <%= f.label :birthday, class: 'weui-label' %>
       </div>
-      <div class="weui_cell_bd weui_cell_primary">
-        <%= f.date_field :birthday, class: 'weui_input' %>
+      <div class="weui-cell__bd weui-cell_primary">
+        <%= f.date_field :birthday, class: 'weui-input' %>
       </div>
     </div>
   </div>
-  <div class="weui_btn_area">
-    <%= f.submit "Confirm", class: 'weui_btn weui_btn_primary' %>
-    <a href="javascript:wx.closeWindow();" class="weui_btn weui_btn_plain_default">Close</a>
+  <div class="weui-btn-area">
+    <%= f.submit "Confirm", class: 'weui-btn weui-btn_primary' %>
+    <a href="javascript:wx.closeWindow();" class="weui-btn weui-btn_plain_default">Close</a>
   </div>
 <% end %>

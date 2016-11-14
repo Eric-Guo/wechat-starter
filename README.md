@@ -111,6 +111,7 @@ rake wechat:menu
 # Contributors
 
 * [Eric-Guo](https://github.com/Eric-Guo)
+* [Frankgu](https://github.com/frankgu)
 
 [travis-badge]: https://travis-ci.org/goofansu/wechat-starter.svg
 [travis]: https://travis-ci.org/goofansu/wechat-starter

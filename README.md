@@ -99,6 +99,15 @@ rake wechat:menu
 
 * [omniauth with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
 
+# Extension projects
+
+* [rails authentication system](https://github.com/frankgu/rails_authentication_system)
+    - wechat omniauth only login
+    - requires phone and email to login the system
+    - phone confirmation service using yunpian
+    - I18n internationalization (default locale is zh-CN)
+    - rpsec test and simplecov test coverage (97.2% LOC covered)
+
 # Contributors
 
 * [Eric-Guo](https://github.com/Eric-Guo)

@@ -17,10 +17,11 @@
 /tmp
 
 # Ignore application configuration
-/config/application.yml
+/config/application.yml.*
 
 *.sublime-workspace
 /shared
+/public/MP*.txt
 config/menu.yaml
 
 .byebug_history

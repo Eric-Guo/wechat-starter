@@ -13,6 +13,8 @@ gem 'rails', '~> 7.1.0'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 5.6'
+gem 'sd_notify'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -47,6 +49,15 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 4.2.0'
   gem 'listen', '>= 3.8.0'
+
+  gem "capistrano"
+  gem "capistrano-rails"
+  gem "capistrano-yarn"
+  gem "capistrano-rbenv"
+  gem "capistrano3-puma", ">= 6.0.0.beta.1"
+
+  gem "ed25519"
+  gem "bcrypt_pbkdf"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

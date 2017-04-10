@@ -24,7 +24,9 @@ Template for developing wechat in rails.
 
 ### Demo
 
-<img src="http://i.imgur.com/TcnHLED.png" width="300">
+<img src="http://onrroy52y.bkt.clouddn.com/20170410223715_TvCyRq_1491834768.jpeg">
+
+Service account sponsored by [Le Wagon Shanghai](https://www.lewagon.com/shanghai)
 
 # Install
 

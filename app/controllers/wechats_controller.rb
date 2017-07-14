@@ -1,4 +1,4 @@
-class WechatsController < ActionController::Base
+class WechatsController < ApplicationController
   # to allow using wechat message DSL and web page helper
   wechat_responder
 

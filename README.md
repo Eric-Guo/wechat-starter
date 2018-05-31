@@ -2,7 +2,6 @@
 
 [![Build Status][travis-badge]][travis]
 [![Code Climate](https://codeclimate.com/github/goofansu/wechat-starter/badges/gpa.svg)](https://codeclimate.com/github/goofansu/wechat-starter)
-[![Dependency Status](https://gemnasium.com/badges/github.com/goofansu/wechat-starter.svg)](https://gemnasium.com/github.com/goofansu/wechat-starter)
 
 Template for developing wechat in rails.
 
@@ -51,7 +50,7 @@ Service account sponsored by [Le Wagon Shanghai](https://www.lewagon.com/shangha
 * Install
 
     * Create your new project and add this repo as template
-    
+
         ``` bash
         mkdir your_app
         cd your_app

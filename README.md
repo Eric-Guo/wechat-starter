@@ -100,7 +100,6 @@ rake wechat:menu
 
 * [omniauth with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
 * [sorcery-weixin](https://github.com/goofansu/sorcery-weixin)
-* [sorcery-weixin-example](https://github.com/goofansu/sorcery-weixin-example)
 
 # Extension projects
 

@@ -1,7 +1,7 @@
 # wechat-starter
 
 [![Build Status][travis-badge]][travis]
-[![Code Climate](https://codeclimate.com/github/goofansu/wechat-starter/badges/gpa.svg)](https://codeclimate.com/github/goofansu/wechat-starter)
+[![Code Climate](https://codeclimate.com/github/Eric-Guo/wechat-starter/badges/gpa.svg)](https://codeclimate.com/github/Eric-Guo/wechat-starter)
 
 Template for developing wechat in rails.
 
@@ -31,7 +31,7 @@ Service account sponsored by [Le Wagon Shanghai](https://www.lewagon.com/shangha
 
 ### See wiki first
 
-* [Wiki](https://github.com/goofansu/wechat-starter/wiki)
+* [Wiki](https://github.com/Eric-Guo/wechat-starter/wiki)
 
 ### Deploy to Heroku
 
@@ -55,7 +55,7 @@ Service account sponsored by [Le Wagon Shanghai](https://www.lewagon.com/shangha
         mkdir your_app
         cd your_app
         git init
-        git remote add template https://github.com/goofansu/wechat-starter.git
+        git remote add template https://github.com/Eric-Guo/wechat-starter.git
         git fetch template
         git checkout -b master template/master
         bundle install
@@ -112,8 +112,9 @@ rake wechat:menu
 
 # Contributors
 
+* [goofansu](https://github.com/goofansu)
 * [Eric-Guo](https://github.com/Eric-Guo)
 * [Frankgu](https://github.com/frankgu)
 
-[travis-badge]: https://travis-ci.org/goofansu/wechat-starter.svg
-[travis]: https://travis-ci.org/goofansu/wechat-starter
+[travis-badge]: https://travis-ci.org/Eric-Guo/wechat-starter.svg
+[travis]: https://travis-ci.org/Eric-Guo/wechat-starter

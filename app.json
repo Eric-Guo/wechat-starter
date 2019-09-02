@@ -1,6 +1,6 @@
 {
   "name": "wechat-starter demo",
-  "repository": "https://github.com/goofansu/wechat-starter",
+  "repository": "https://github.com/Eric-Guo/wechat-starter",
   "addons": [
     "heroku-postgresql:hobby-dev"
   ],

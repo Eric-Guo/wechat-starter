@@ -56,7 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry', group: :development
 
 gem 'figaro'
-gem 'devise', '>= 4.6.2'
+gem 'devise', '>= 4.7.1'
 gem 'wechat', '>= 0.11.1'
 gem 'wx_pay'
 gem 'weui-rails'

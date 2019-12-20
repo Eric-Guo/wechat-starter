@@ -12,7 +12,7 @@ gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.1', '>= 5.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -37,7 +37,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara'
+  gem 'capybara', '>= 3.28.0'
   gem 'selenium-webdriver', '>= 3.142.3'
 end
 
@@ -56,9 +56,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry', group: :development
 
 gem 'figaro'
-gem 'devise', '>= 4.6.2'
+gem 'devise', '>= 4.7.0'
 gem 'wechat', '>= 0.11.1'
 gem 'wx_pay'
 gem 'weui-rails'
-gem 'omniauth-wechat-oauth2'
-gem 'jquery-rails', '>= 4.3.3'
+gem 'omniauth-wechat-oauth2', '>= 0.1.2'
+gem 'jquery-rails', '>= 4.3.5'

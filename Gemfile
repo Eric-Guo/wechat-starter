@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -56,7 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry', group: :development
 
 gem 'figaro'
-gem 'devise', '>= 4.7.0'
+gem 'devise', '>= 4.7.1'
 gem 'wechat', '>= 0.11.5'
 gem 'wx_pay'
 gem 'weui-rails'

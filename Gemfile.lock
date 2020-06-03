@@ -242,9 +242,9 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    websocket-driver (0.7.1)
+    websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     wechat (0.11.9)
       activesupport (>= 3.2, < 7)
       http (>= 1.0.4, < 5)
@@ -275,7 +275,7 @@ DEPENDENCIES
   pg
   pry
   puma (~> 3.12)
-  rails (~> 5.2.3)
+  rails (~> 5.2.4, >= 5.2.4.3)
   sass-rails (~> 5.1, >= 5.1.0)
   selenium-webdriver (>= 3.142.3)
   spring
@@ -289,4 +289,4 @@ DEPENDENCIES
   wx_pay
 
 BUNDLED WITH
-   2.1.4
+   1.17.3

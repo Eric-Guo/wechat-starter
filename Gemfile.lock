@@ -65,7 +65,7 @@ GEM
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
-    devise (4.7.1)
+    devise (4.7.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -77,7 +77,7 @@ GEM
     execjs (2.7.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
-    ffi (1.12.2)
+    ffi (1.13.1)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -97,7 +97,7 @@ GEM
     http-form_data (2.3.0)
     http-parser (1.2.1)
       ffi-compiler (>= 1.0, < 2.0)
-    i18n (1.8.2)
+    i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
@@ -110,7 +110,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.5.0)
+    loofah (2.6.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -145,7 +145,7 @@ GEM
     omniauth-oauth2 (1.6.0)
       oauth2 (~> 1.1)
       omniauth (~> 1.9)
-    omniauth-wechat-oauth2 (0.1.2)
+    omniauth-wechat-oauth2 (0.2.2)
       omniauth (>= 1.3.2)
       omniauth-oauth2 (>= 1.1.1)
     orm_adapter (0.5.0)
@@ -155,7 +155,7 @@ GEM
       method_source (~> 1.0)
     public_suffix (4.0.5)
     puma (3.12.6)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.4.3)
@@ -186,8 +186,8 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (1.7.0)
-    responders (3.0.0)
+    regexp_parser (1.7.1)
+    responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
     rest-client (2.1.0)
@@ -242,9 +242,9 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    websocket-driver (0.7.1)
+    websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     wechat (0.11.9)
       activesupport (>= 3.2, < 7)
       http (>= 1.0.4, < 5)
@@ -265,17 +265,17 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  capybara (>= 3.28.0)
-  devise (>= 4.7.0)
+  capybara (>= 3.32.2)
+  devise (>= 4.7.1)
   figaro
   jbuilder (~> 2.5)
-  jquery-rails (>= 4.3.5)
+  jquery-rails (>= 4.4.0)
   listen (>= 3.0.5, < 3.2)
-  omniauth-wechat-oauth2
+  omniauth-wechat-oauth2 (>= 0.1.2)
   pg
   pry
   puma (~> 3.12)
-  rails (~> 5.2.3)
+  rails (~> 5.2.4, >= 5.2.4.3)
   sass-rails (~> 5.1, >= 5.1.0)
   selenium-webdriver (>= 3.142.3)
   spring
@@ -289,4 +289,4 @@ DEPENDENCIES
   wx_pay
 
 BUNDLED WITH
-   2.1.4
+   1.17.3

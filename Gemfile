@@ -37,7 +37,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.28.0'
+  gem 'capybara', '>= 3.32.2'
   gem 'selenium-webdriver', '>= 3.142.3'
 end
 
@@ -57,7 +57,7 @@ gem 'pry', group: :development
 
 gem 'figaro'
 gem 'devise', '>= 4.7.0'
-gem 'wechat', '>= 0.11.5'
+gem 'wechat', '>= 0.11.9'
 gem 'wx_pay'
 gem 'weui-rails'
 gem 'omniauth-wechat-oauth2'

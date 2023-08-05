@@ -60,7 +60,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    addressable (2.8.4)
+    addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.13.0)
       execjs (~> 2)
@@ -209,7 +209,7 @@ GEM
       bundler (>= 1.15.0)
       railties (= 6.1.7.4)
       sprockets-rails (>= 2.0.0)
-    rails-dom-testing (2.1.1)
+    rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
@@ -253,7 +253,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (4.10.0)
+    selenium-webdriver (4.11.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -307,7 +307,7 @@ GEM
       rest-client (>= 2.0.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.10)
+    zeitwerk (2.6.11)
 
 PLATFORMS
   ruby
@@ -315,7 +315,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  capybara (>= 3.39.2)
+  capybara (>= 3.39)
   devise (>= 4.9.2)
   figaro
   jbuilder (~> 2.5)
@@ -327,7 +327,7 @@ DEPENDENCIES
   puma (~> 5.6)
   rails (~> 6.1.7.4)
   sass-rails (~> 6.0)
-  selenium-webdriver (~> 4.10.0)
+  selenium-webdriver (>= 4.11.0)
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 4.2.0)
@@ -336,5 +336,8 @@ DEPENDENCIES
   weui-rails
   wx_pay
 
+RUBY VERSION
+   ruby 3.2.2p53
+
 BUNDLED WITH
-   2.4.17
+   2.4.18

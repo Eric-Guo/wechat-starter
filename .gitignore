@@ -26,3 +26,4 @@
 /shared
 /public/MP*.txt
 config/menu.yaml
+config/master.key

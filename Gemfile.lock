@@ -162,6 +162,8 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.3-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.3-x86_64-darwin)
+      racc (~> 1.4)
     oauth2 (2.0.9)
       faraday (>= 0.17.3, < 3.0)
       jwt (>= 1.0, < 3.0)
@@ -267,7 +269,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stringio (3.0.7)
+    stringio (3.0.8)
     thor (1.2.2)
     tilt (2.2.0)
     timeout (0.4.0)
@@ -312,6 +314,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-darwin-19
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)

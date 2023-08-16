@@ -267,6 +267,8 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     stringio (3.0.8)
+    terser (1.1.17)
+      execjs (>= 0.3.0, < 3)
     thor (1.2.2)
     tilt (2.2.0)
     timeout (0.4.0)
@@ -275,8 +277,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uglifier (4.2.0)
-      execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
@@ -331,9 +331,9 @@ DEPENDENCIES
   rails (~> 6.1.7.4)
   sass-rails (~> 6.0)
   selenium-webdriver (>= 4.11.0)
+  terser (~> 1.1)
   turbolinks (~> 5)
   tzinfo-data
-  uglifier (>= 4.2.0)
   web-console (>= 4.2.0)
   wechat (>= 0.17.1)
   weui-rails

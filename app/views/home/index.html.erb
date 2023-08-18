@@ -8,15 +8,15 @@
 
 <div class="weui-msg">
   <div class="weui-msg__text-area">
-    <h1 class="weui-msg__title">Hello, <%= current_user.nickname %></h1>
-    <img src="<%= current_user.avatar %>" width="128" height="128">
+    <h1 class="weui-msg__title">欢迎, <%= current_user.nickname %></h1>
+    <img src="<%= current_user.avatar %>" width="64" height="64">
   </div>
   <div class="weui-msg__opr-area">
     <p class="weui-btn-area">
       <% if Figaro.env.wechat_pay_mch_id %>
-        <a href="javascript:wxpay();" class="weui-btn weui-btn_primary">Try wechat pay!</a>
+        <a href="javascript:wxpay();" class="weui-btn weui-btn_primary">以 32 RMB 购买</a>
       <% end %>
-      <a href="javascript:wx.closeWindow();" class="weui-btn weui-btn_plain-default">Close</a>
+      <a href="javascript:wx.closeWindow();" class="weui-btn weui-btn_plain-default">关闭</a>
     </p>
   </div>
 </div>

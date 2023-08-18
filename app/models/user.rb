@@ -27,10 +27,6 @@ class User < ActiveRecord::Base
     end
   end
 
-  def email_required?
-    false
-  end
-
   private
   def set_password
     self.password ||= Devise.friendly_token[0, 20]

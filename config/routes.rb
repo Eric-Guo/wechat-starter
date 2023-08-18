@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resource :wechat, only: [:show, :create]
   devise_for :users, controllers: {
                omniauth_callbacks: 'users/omniauth_callbacks',
-               registrations: 'users/registrations'
+               registrations: 'users/registrations',
+               sessions: "users/sessions"
              }
 end

@@ -6,7 +6,7 @@ class PayController < ApplicationController
     pay_params = {
       body: '绩效系统原始git递交历史包',
       out_trade_no: "trade-#{Time.now.to_i}",
-      total_fee: 1,
+      total_fee: 1600,
       spbill_create_ip: request.remote_ip,
       notify_url: Figaro.env.wechat_pay_notify_url,
       trade_type: 'JSAPI',

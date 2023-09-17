@@ -99,7 +99,7 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.12.0)
-    execjs (2.9.0)
+    execjs (2.9.1)
     faraday (2.7.11)
       base64
       faraday-net_http (>= 2.0, < 3.1)

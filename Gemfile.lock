@@ -211,7 +211,7 @@ GEM
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    psych (5.1.1)
+    psych (5.1.1.1)
       stringio
     public_suffix (5.0.3)
     puma (5.6.7)

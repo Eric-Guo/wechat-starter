@@ -174,7 +174,7 @@ GEM
     msgpack (1.7.2)
     multi_xml (0.6.0)
     mutex_m (0.2.0)
-    net-imap (0.4.6)
+    net-imap (0.4.7)
       date
       net-protocol
     net-pop (0.1.2)
@@ -184,7 +184,7 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     netrc (0.11.0)
-    nio4r (2.6.1)
+    nio4r (2.7.0)
     nokogiri (1.15.5-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.15.5-x86_64-darwin)

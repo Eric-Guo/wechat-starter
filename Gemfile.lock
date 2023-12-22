@@ -112,7 +112,7 @@ GEM
       ruby2_keywords
     erubi (1.12.0)
     execjs (2.9.1)
-    faraday (2.7.12)
+    faraday (2.8.1)
       base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
@@ -138,7 +138,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.7.1)
-    irb (1.10.1)
+    irb (1.11.0)
       rdoc
       reline (>= 0.3.8)
     jbuilder (2.11.5)
@@ -387,4 +387,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.5.1
+   2.5.3

@@ -134,11 +134,10 @@ GEM
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    i18n (1.14.3)
+    i18n (1.14.4)
       concurrent-ruby (~> 1.0)
-      racc (~> 1.7)
     io-console (0.7.2)
-    irb (1.11.2)
+    irb (1.12.0)
       rdoc
       reline (>= 0.4.2)
     jbuilder (2.11.5)

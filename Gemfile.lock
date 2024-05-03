@@ -137,8 +137,8 @@ GEM
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.12.0)
-      rdoc
+    irb (1.13.0)
+      rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.12.0)
       actionview (>= 5.0.0)
@@ -172,7 +172,8 @@ GEM
     mini_mime (1.1.5)
     minitest (5.22.3)
     msgpack (1.7.2)
-    multi_xml (0.6.0)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
@@ -269,7 +270,7 @@ GEM
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.0)
-    reline (0.5.3)
+    reline (0.5.5)
       io-console (~> 0.5)
     responders (3.1.1)
       actionpack (>= 5.2)
@@ -390,4 +391,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.5.9
+   2.5.10

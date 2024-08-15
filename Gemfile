@@ -56,7 +56,7 @@ gem 'pry', group: :development
 
 gem 'figaro'
 gem 'devise', '>= 4.9.2'
-gem 'wechat', '>= 0.17.1'
+gem 'wechat', '>= 0.17.4'
 gem 'wx_pay'
 gem 'weui-rails'
 gem 'omniauth-wechat-oauth2'

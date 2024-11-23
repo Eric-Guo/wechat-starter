@@ -35,5 +35,5 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/syst
 # set :keep_releases, 5
 
 set :rbenv_type, :user
-set :rbenv_ruby, "3.1.4"
+set :rbenv_ruby, "3.3.6"
 

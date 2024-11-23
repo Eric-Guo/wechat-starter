@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "~> 3.18.0"
+lock "~> 3.19.2"
 
 set :application, 'pp_vendor'
 # replace your repo_url and do not forget add machine id_rsa.pub to Settings->Deploy keys

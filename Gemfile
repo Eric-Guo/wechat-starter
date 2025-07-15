@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.1.0'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -56,9 +56,9 @@ gem 'pry', group: :development
 
 gem 'figaro'
 gem 'devise', '>= 4.9.2'
-gem 'wechat', '>= 0.17.1'
+gem 'wechat', '>= 0.17.6'
 gem 'wx_pay'
 gem 'weui-rails'
 gem 'omniauth-wechat-oauth2'
-gem 'omniauth', '~> 1.9'
+gem 'omniauth', '~> 2.1', '>= 2.1.0'
 gem 'jquery-rails', '>= 4.6.0'
